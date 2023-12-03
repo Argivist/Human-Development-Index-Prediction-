@@ -44,7 +44,6 @@ The dataset utilized in this project is sourced from the World Development Indic
 
 - The dataset covers economic, health, education, and demographic indicators from diverse sources such as national accounts data, statistical publications, and international organizations.
 - Data quality and reliability, especially in demographic statistics, may vary due to limitations in resources and collection methods, particularly in developing countries.
-- The included license URLs provide information regarding usage rights and permissions for this dataset.
 
 Understanding these indicators and their sources is crucial for comprehensive analysis and interpretation within the context of economic, health, education, and population trends.
 
@@ -63,7 +62,7 @@ Understanding these indicators and their sources is crucial for comprehensive an
 ## Description
 
 ### App.py
-- Utilizes Streamlit for a user-friendly interface.
+- Utilizes Streamlit for a user-friendly interface. To use the web application, Navigate to your IDE's terminal and run `python -m streamlit run App.py`. Ensure your terminal path is that of the file path. 
 - Loads predicted index data for countries and predicts HDI based on user inputs.
 - Visualizes HDI trends over the years for selected countries.
 
@@ -82,14 +81,14 @@ Understanding these indicators and their sources is crucial for comprehensive an
 ## Usage
 
 1. **Feature Engineering**: Run FeatureEngineering.py to preprocess and engineer features.
-2. **Model Training**: Utilize HDI_Model_Training.ipynb to train your LSTM models and save them as 'YourModel.h5'.
+2. **Model Training**: Utilize HDI_Model_Training.ipynb to train your LSTM models and save them as 'best_model_hyperless.pkl'.
 3. **App Execution**: Run App.py to interact with the HDI prediction interface.
 4. **Data Files**: Ensure 'Income_pred_hyperparamless.csv', 'Education_pred_hyperparamless.csv', and 'Life_pred_hyperparamless.csv' exist for predictions.
 
 ## Additional Notes
 
 - Ensure you have the necessary dependencies installed (Streamlit, pandas, numpy, etc.).
-- Modify file paths and update 'YourModel.h5' with your trained models for the app to function properly.
+- Modify file paths and update 'best_model_hyperless.pkl' with your trained models for the app to function properly.
 - Adjust the range for the year input in the Streamlit app as needed.
 
 ## Video Demo
